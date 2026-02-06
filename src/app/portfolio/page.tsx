@@ -34,7 +34,7 @@ export default function PortfolioPage() {
                     src={project.imageUrl}
                     alt={project.description}
                     fill
-                    className="object-cover"
+                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     data-ai-hint={project.imageHint}
                   />
