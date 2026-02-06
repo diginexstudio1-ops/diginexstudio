@@ -33,8 +33,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <p className="text-muted-foreground">Reach out to us via email for any inquiries.</p>
-                <a href="mailto:hello@diginexstudio.com" className="text-primary hover:underline">
-                  hello@diginexstudio.com
+                <a href="mailto:info@diginexstudio.com" className="text-primary hover:underline">
+                  info@diginexstudio.com
                 </a>
               </div>
             </div>
