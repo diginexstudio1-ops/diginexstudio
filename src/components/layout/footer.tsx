@@ -45,8 +45,8 @@ export function Footer() {
                         <div>
                             <h4 className="font-headline font-semibold mb-4">Legal</h4>
                             <ul className="space-y-2">
-                                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link></li>
-                                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link></li>
+                                <li><Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link></li>
+                                <li><Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link></li>
                             </ul>
                         </div>
                         <div>
@@ -64,7 +64,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-                    <p>&copy; {new Date().getFullYear()} DigiNexStudio. All rights reserved.</p>
+                    <p>&copy; 2024 DigiNexStudio. All rights reserved.</p>
                 </div>
             </div>
         </footer>
