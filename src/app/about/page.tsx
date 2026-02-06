@@ -44,13 +44,13 @@ export default function AboutPage() {
 
       <section className="container mx-auto px-4 my-16 md:my-24">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-          <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg group">
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}
                 alt={aboutImage.description}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
                 data-ai-hint={aboutImage.imageHint}
               />
             )}
@@ -95,7 +95,7 @@ export default function AboutPage() {
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           {values.map((value) => (
-            <Card key={value.title} className="text-center">
+            <Card key={value.title} className="text-center transition-transform duration-300 hover:-translate-y-2">
               <CardHeader>
                 <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
                   <value.icon className="h-8 w-8" />

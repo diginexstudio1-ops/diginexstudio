@@ -59,7 +59,7 @@ function TrustIndicators() {
       <div className="mt-12 bg-card rounded-lg p-8 md:p-12 shadow-md">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat) => (
-            <div key={stat.label}>
+            <div key={stat.label} className="transition-transform duration-300 hover:scale-105">
               <p className="text-4xl md:text-5xl font-bold text-primary">{stat.value}</p>
               <p className="mt-2 text-muted-foreground">{stat.label}</p>
             </div>
@@ -104,7 +104,7 @@ function ServicesOverview() {
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service) => (
-          <Card key={service.title} className="text-center transform hover:-translate-y-2 transition-transform duration-300 bg-card">
+          <Card key={service.title} className="text-center transition-transform duration-300 hover:-translate-y-2 bg-card">
             <CardHeader>
               <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
                 <service.icon className="h-8 w-8" />
@@ -141,7 +141,7 @@ function PortfolioPreview() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioPreviews.map((project) => (
             <Link href="/portfolio" key={project.id}>
-              <Card className="overflow-hidden group bg-card">
+              <Card className="overflow-hidden group bg-card transition-all duration-300 hover:shadow-xl">
                 <CardContent className="p-0">
                   <div className="relative aspect-video">
                     <Image

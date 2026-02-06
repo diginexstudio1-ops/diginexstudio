@@ -77,7 +77,7 @@ export default function PricingPage() {
       <section className="container mx-auto px-4 my-16 md:my-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {plans.monthly.map((plan) => (
-            <Card key={plan.title} className={`flex flex-col ${plan.popular ? "border-primary shadow-lg" : ""}`}>
+            <Card key={plan.title} className={`flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${plan.popular ? "border-primary shadow-lg" : ""}`}>
               {plan.popular && (
                 <div className="bg-primary text-primary-foreground text-xs font-bold uppercase py-1 px-4 self-center -mt-3 rounded-full">Most Popular</div>
               )}
