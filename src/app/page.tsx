@@ -62,7 +62,7 @@ function TrustIndicators() {
       </h3>
       <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
         {trustLogos.map((logo) => (
-          <div key={logo.id} className="relative h-12 w-40 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+          <div key={logo.id} className="relative h-12 w-40 opacity-60 hover:opacity-100 transition-all duration-300">
             <Image
               src={logo.imageUrl}
               alt={logo.description}
