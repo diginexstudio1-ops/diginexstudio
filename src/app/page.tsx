@@ -42,7 +42,7 @@ function HeroSection() {
           <Button asChild size="lg">
             <Link href="/contact">Get a Free Quote</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="bg-transparent border-primary text-primary hover:bg-primary/10">
+          <Button asChild size="lg" variant="outline">
             <Link href="/portfolio">Our Work</Link>
           </Button>
         </div>
@@ -54,12 +54,13 @@ function HeroSection() {
 function TrustIndicators() {
   return (
     <section className="container mx-auto px-4 text-center">
-      <h3 className="text-lg font-semibold text-muted-foreground uppercase tracking-wider">
-        Trusted by Visionary Brands
-      </h3>
-      <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+      <h2 className="font-headline text-3xl md:text-4xl font-bold">Trusted by Industry Leaders</h2>
+      <p className="mt-4 max-w-2xl mx-auto text-muted-foreground md:text-lg">
+        We partner with innovative companies to build the future of the web, delivering solutions that drive success.
+      </p>
+      <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
         {trustLogos.map((logo) => (
-          <div key={logo.id} className="relative h-12 w-40 opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300">
+          <div key={logo.id} className="relative h-12 w-40 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300">
             <Image
               src={logo.imageUrl}
               alt={logo.description}
