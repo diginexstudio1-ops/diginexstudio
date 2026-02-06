@@ -64,7 +64,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <main className="flex flex-col">
-      <section className="bg-card py-16 md:py-24">
+      <section className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="font-semibold text-primary">Our Services</p>
@@ -110,7 +110,7 @@ export default function ServicesPage() {
             We're ready to listen. Let us know your requirements, and we'll craft a solution that's perfect for you.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-200">
               <Link href="/contact">Request a Custom Quote</Link>
             </Button>
           </div>

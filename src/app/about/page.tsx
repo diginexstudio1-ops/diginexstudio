@@ -28,7 +28,7 @@ const values = [
 export default function AboutPage() {
   return (
     <main className="flex flex-col">
-      <section className="bg-card py-16 md:py-24">
+      <section className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="font-semibold text-primary">About Us</p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-card py-16 md:py-24">
+      <section className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16">
             <div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
               Let's build the future of digital together. Explore our work and see how we can help you grow.
             </p>
             <div className="mt-8">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-200">
                 <Link href="/contact">Work With Us</Link>
               </Button>
             </div>

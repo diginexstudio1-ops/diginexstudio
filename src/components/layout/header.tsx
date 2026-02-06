@@ -46,7 +46,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button asChild className="bg-primary hover:bg-primary/90">
+          <Button asChild>
             <Link href="/contact">Get a Quote</Link>
           </Button>
         </div>
@@ -83,7 +83,7 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto">
-                    <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Button asChild className="w-full">
                         <Link href="/contact" onClick={() => setIsOpen(false)}>Get a Quote</Link>
                     </Button>
                 </div>

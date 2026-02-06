@@ -10,7 +10,7 @@ const portfolioItems = PlaceHolderImages.filter((image) => image.id.startsWith("
 export default function PortfolioPage() {
   return (
     <main className="flex flex-col">
-      <section className="bg-card py-16 md:py-24">
+      <section className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="font-semibold text-primary">Our Work</p>
@@ -60,7 +60,7 @@ export default function PortfolioPage() {
             Let's turn your idea into our next success story. Reach out to us to discuss your project.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-200">
               <Link href="/contact">Start Your Project</Link>
             </Button>
           </div>

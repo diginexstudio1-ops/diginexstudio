@@ -21,27 +21,19 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center">
-      <Image
-        src="/hero-image.jpg"
-        alt="A custom hero image"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 container mx-auto px-4">
-        <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
+    <section className="w-full py-24 md:py-32 lg:py-40 flex items-center justify-center text-center bg-background">
+      <div className="container mx-auto px-4">
+        <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
           Crafting Digital Excellence
         </h1>
-        <p className="mt-4 md:mt-6 max-w-lg md:max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
+        <p className="mt-4 md:mt-6 max-w-lg md:max-w-2xl mx-auto text-lg md:text-xl text-foreground">
           We build stunning, high-performing websites and digital solutions that drive growth and deliver exceptional user experiences.
         </p>
         <div className="mt-8 md:mt-10 flex justify-center gap-4">
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/80">
+          <Button asChild size="lg">
             <Link href="/contact">Get a Free Quote</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+          <Button asChild size="lg" variant="outline" className="text-primary">
             <Link href="/portfolio">Our Work</Link>
           </Button>
         </div>
@@ -64,11 +56,11 @@ function TrustIndicators() {
       <p className="mt-4 max-w-2xl mx-auto text-muted-foreground md:text-lg">
         Our commitment to excellence is reflected in our results. We are proud of the value we deliver to our clients.
       </p>
-      <div className="mt-12 bg-card/50 rounded-lg p-8 md:p-12 shadow-lg backdrop-blur-sm">
+      <div className="mt-12 bg-card rounded-lg p-8 md:p-12 shadow-md">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="text-4xl md:text-5xl font-bold text-accent">{stat.value}</p>
+              <p className="text-4xl md:text-5xl font-bold text-primary">{stat.value}</p>
               <p className="mt-2 text-muted-foreground">{stat.label}</p>
             </div>
           ))}
@@ -112,7 +104,7 @@ function ServicesOverview() {
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service) => (
-          <Card key={service.title} className="text-center transform hover:-translate-y-2 transition-transform duration-300 bg-card/50 backdrop-blur-sm">
+          <Card key={service.title} className="text-center transform hover:-translate-y-2 transition-transform duration-300 bg-card">
             <CardHeader>
               <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
                 <service.icon className="h-8 w-8" />
@@ -138,7 +130,7 @@ function ServicesOverview() {
 
 function PortfolioPreview() {
   return (
-    <section className="bg-card/50 py-16 md:py-24 backdrop-blur-sm">
+    <section className="bg-secondary py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Recent Work</h2>
@@ -149,7 +141,7 @@ function PortfolioPreview() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioPreviews.map((project) => (
             <Link href="/portfolio" key={project.id}>
-              <Card className="overflow-hidden group bg-card/50 backdrop-blur-sm">
+              <Card className="overflow-hidden group bg-card">
                 <CardContent className="p-0">
                   <div className="relative aspect-video">
                     <Image

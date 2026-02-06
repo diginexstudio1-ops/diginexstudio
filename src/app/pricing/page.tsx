@@ -60,7 +60,7 @@ const plans = {
 export default function PricingPage() {
   return (
     <main className="flex flex-col">
-      <section className="bg-card py-16 md:py-24">
+      <section className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="font-semibold text-primary">Pricing</p>
@@ -93,7 +93,7 @@ export default function PricingPage() {
                 <ul className="space-y-4">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start">
-                      <Check className="h-5 w-5 text-accent mr-3 flex-shrink-0 mt-1" />
+                      <Check className="h-5 w-5 text-primary mr-3 flex-shrink-0 mt-1" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}
