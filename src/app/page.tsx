@@ -7,7 +7,6 @@ import Link from "next/link";
 
 const trustLogos = PlaceHolderImages.filter((image) => image.id.startsWith("trust-logo"));
 const portfolioPreviews = PlaceHolderImages.filter((image) => image.id.startsWith("portfolio-preview"));
-const heroImage = PlaceHolderImages.find((image) => image.id === "hero-background");
 
 export default function Home() {
   return (
@@ -23,22 +22,20 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white bg-primary">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover opacity-20"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
+      <Image
+        src="/hero-image.jpg"
+        alt="A custom hero image"
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container mx-auto px-4">
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
           Crafting Digital Excellence
         </h1>
-        <p className="mt-4 md:mt-6 max-w-lg md:max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/80">
+        <p className="mt-4 md:mt-6 max-w-lg md:max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
           We build stunning, high-performing websites and digital solutions that drive growth and deliver exceptional user experiences.
         </p>
         <div className="mt-8 md:mt-10 flex justify-center gap-4">
