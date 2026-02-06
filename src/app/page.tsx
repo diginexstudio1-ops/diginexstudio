@@ -39,10 +39,10 @@ function HeroSection() {
           We build stunning, high-performing websites and digital solutions that drive growth and deliver exceptional user experiences.
         </p>
         <div className="mt-8 md:mt-10 flex justify-center gap-4">
-          <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button asChild size="lg">
             <Link href="/contact">Get a Free Quote</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="text-white border-white/50 hover:bg-white/10 hover:text-white">
+          <Button asChild size="lg" variant="outline" className="bg-transparent border-primary text-primary hover:bg-primary/10">
             <Link href="/portfolio">Our Work</Link>
           </Button>
         </div>
@@ -179,7 +179,7 @@ function CtaSection() {
           Let's collaborate to create something amazing. Contact us today for a consultation and see how we can help you achieve your digital goals.
         </p>
         <div className="mt-8">
-          <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <Button asChild size="lg">
             <Link href="/contact">Get In Touch</Link>
           </Button>
         </div>

@@ -100,7 +100,7 @@ export default function PricingPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className={`w-full ${plan.popular ? "bg-primary hover:bg-primary/90" : "bg-accent hover:bg-accent/90 text-accent-foreground"}`}>
+                <Button asChild className="w-full">
                   <Link href="/contact">{plan.cta}</Link>
                 </Button>
               </CardFooter>

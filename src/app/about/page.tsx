@@ -117,7 +117,7 @@ export default function AboutPage() {
               Let's build the future of digital together. Explore our work and see how we can help you grow.
             </p>
             <div className="mt-8">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              <Button asChild size="lg">
                 <Link href="/contact">Work With Us</Link>
               </Button>
             </div>

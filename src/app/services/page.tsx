@@ -110,7 +110,7 @@ export default function ServicesPage() {
             We're ready to listen. Let us know your requirements, and we'll craft a solution that's perfect for you.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button asChild size="lg">
               <Link href="/contact">Request a Custom Quote</Link>
             </Button>
           </div>

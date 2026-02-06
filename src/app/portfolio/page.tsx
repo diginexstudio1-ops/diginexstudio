@@ -42,7 +42,7 @@ export default function PortfolioPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="font-headline text-xl font-semibold">{project.description}</h3>
-                  <p className="text-muted-foreground mt-2 text-sm">Web Development & Design</p>
+                  <p className="text-muted-foreground mt-2 text-sm">Web Development &amp; Design</p>
                   <Button variant="link" className="p-0 h-auto mt-4 text-primary">
                     View Case Study <ArrowRight className="ml-2 h-4 w-4"/>
                   </Button>
@@ -60,7 +60,7 @@ export default function PortfolioPage() {
             Let's turn your idea into our next success story. Reach out to us to discuss your project.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button asChild size="lg">
               <Link href="/contact">Start Your Project</Link>
             </Button>
           </div>
