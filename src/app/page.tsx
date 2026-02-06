@@ -5,7 +5,6 @@ import { ArrowRight, Code, LineChart, Palette, ShoppingCart } from "lucide-react
 import Image from "next/image";
 import Link from "next/link";
 
-const trustLogos = PlaceHolderImages.filter((image) => image.id.startsWith("trust-logo"));
 const portfolioPreviews = PlaceHolderImages.filter((image) => image.id.startsWith("portfolio-preview"));
 
 export default function Home() {
@@ -22,7 +21,7 @@ export default function Home() {
 
 function HeroSection() {
   return (
-    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
+    <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center">
       <Image
         src="/hero-image.jpg"
         alt="A custom hero image"
@@ -32,17 +31,17 @@ function HeroSection() {
       />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container mx-auto px-4">
-        <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+        <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
           Crafting Digital Excellence
         </h1>
         <p className="mt-4 md:mt-6 max-w-lg md:max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
           We build stunning, high-performing websites and digital solutions that drive growth and deliver exceptional user experiences.
         </p>
         <div className="mt-8 md:mt-10 flex justify-center gap-4">
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/80">
             <Link href="/contact">Get a Free Quote</Link>
           </Button>
-          <Button asChild size="lg" variant="outline">
+          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
             <Link href="/portfolio">Our Work</Link>
           </Button>
         </div>
@@ -52,24 +51,28 @@ function HeroSection() {
 }
 
 function TrustIndicators() {
+  const stats = [
+    { value: "150+", label: "Projects Completed" },
+    { value: "98%", label: "Client Satisfaction" },
+    { value: "10+", label: "Years of Experience" },
+    { value: "24/7", label: "Expert Support" },
+  ];
+
   return (
     <section className="container mx-auto px-4 text-center">
-      <h2 className="font-headline text-3xl md:text-4xl font-bold">Trusted by Industry Leaders</h2>
+      <h2 className="font-headline text-3xl md:text-4xl font-bold">Trusted by Visionary Brands</h2>
       <p className="mt-4 max-w-2xl mx-auto text-muted-foreground md:text-lg">
-        We partner with innovative companies to build the future of the web, delivering solutions that drive success.
+        Our commitment to excellence is reflected in our results. We are proud of the value we deliver to our clients.
       </p>
-      <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-        {trustLogos.map((logo) => (
-          <div key={logo.id} className="relative h-12 w-40 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-            <Image
-              src={logo.imageUrl}
-              alt={logo.description}
-              fill
-              className="object-contain"
-              data-ai-hint={logo.imageHint}
-            />
-          </div>
-        ))}
+      <div className="mt-12 bg-card/50 rounded-lg p-8 md:p-12 shadow-lg backdrop-blur-sm">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="text-4xl md:text-5xl font-bold text-accent">{stat.value}</p>
+              <p className="mt-2 text-muted-foreground">{stat.label}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -109,7 +112,7 @@ function ServicesOverview() {
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service) => (
-          <Card key={service.title} className="text-center transform hover:-translate-y-2 transition-transform duration-300">
+          <Card key={service.title} className="text-center transform hover:-translate-y-2 transition-transform duration-300 bg-card/50 backdrop-blur-sm">
             <CardHeader>
               <div className="mx-auto bg-primary/10 text-primary p-3 rounded-full w-fit">
                 <service.icon className="h-8 w-8" />
@@ -135,7 +138,7 @@ function ServicesOverview() {
 
 function PortfolioPreview() {
   return (
-    <section className="bg-card py-16 md:py-24">
+    <section className="bg-card/50 py-16 md:py-24 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Recent Work</h2>
@@ -146,7 +149,7 @@ function PortfolioPreview() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioPreviews.map((project) => (
             <Link href="/portfolio" key={project.id}>
-              <Card className="overflow-hidden group">
+              <Card className="overflow-hidden group bg-card/50 backdrop-blur-sm">
                 <CardContent className="p-0">
                   <div className="relative aspect-video">
                     <Image
@@ -180,7 +183,7 @@ function CtaSection() {
           Let's collaborate to create something amazing. Contact us today for a consultation and see how we can help you achieve your digital goals.
         </p>
         <div className="mt-8">
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-200">
             <Link href="/contact">Get In Touch</Link>
           </Button>
         </div>
