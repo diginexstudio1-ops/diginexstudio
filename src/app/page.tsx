@@ -27,7 +27,7 @@ function HeroSection() {
         src="/hero-image.jpg"
         alt="A custom hero image"
         fill
-        className="object-cover grayscale"
+        className="object-cover"
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
@@ -59,7 +59,7 @@ function TrustIndicators() {
       </h3>
       <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
         {trustLogos.map((logo) => (
-          <div key={logo.id} className="relative h-12 w-40 opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300 grayscale hover:grayscale-0">
+          <div key={logo.id} className="relative h-12 w-40 opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300">
             <Image
               src={logo.imageUrl}
               alt={logo.description}
@@ -152,7 +152,7 @@ function PortfolioPreview() {
                       src={project.imageUrl}
                       alt={project.description}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300 grayscale group-hover:grayscale-0"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                       data-ai-hint={project.imageHint}
                     />
                   </div>

@@ -50,7 +50,7 @@ export default function AboutPage() {
                 src={aboutImage.imageUrl}
                 alt={aboutImage.description}
                 fill
-                className="object-cover grayscale"
+                className="object-cover"
                 data-ai-hint={aboutImage.imageHint}
               />
             )}
