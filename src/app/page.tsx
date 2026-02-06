@@ -62,7 +62,7 @@ function TrustIndicators() {
       </h3>
       <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
         {trustLogos.map((logo) => (
-          <div key={logo.id} className="relative h-12 w-40 opacity-60 hover:opacity-100 transition-all duration-300">
+          <div key={logo.id} className="relative h-12 w-40 opacity-70 hover:opacity-100 hover:scale-105 transition-all duration-300">
             <Image
               src={logo.imageUrl}
               alt={logo.description}
@@ -145,7 +145,7 @@ function PortfolioPreview() {
             We are proud of the solutions we've delivered. Take a look at some of our featured projects.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioPreviews.map((project) => (
             <Link href="/portfolio" key={project.id}>
               <Card className="overflow-hidden group">

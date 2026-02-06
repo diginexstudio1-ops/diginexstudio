@@ -55,6 +55,12 @@
       "imageHint": "brand identity"
     },
     {
+      "id": "portfolio-preview-4",
+      "description": "Travel Booking App",
+      "imageUrl": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0cmF2ZWwlMjBhcHB8ZW58MHx8fHwxNzAzNTkxMzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel app"
+    },
+    {
       "id": "portfolio-item-1",
       "description": "E-commerce Platform for 'Urban Style'",
       "imageUrl": "https://images.unsplash.com/photo-1629828367362-ed0269bef233?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc3MDM4Njg2MHww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -89,6 +95,24 @@
       "description": "Data Dashboard for 'AnalyticsCo'",
       "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NzAzOTk1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data visualization"
+    },
+    {
+      "id": "portfolio-item-7",
+      "description": "Creative Agency Landing Page",
+      "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBkZXNpZ24lMjBhZ2VuY3l8ZW58MHx8fHwxNzAzNTkxNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "creative agency"
+    },
+    {
+      "id": "portfolio-item-8",
+      "description": "Real Estate Marketplace",
+      "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3AzNTkxNjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "realestate website"
+    },
+    {
+      "id": "portfolio-item-9",
+      "description": "Online Learning Platform",
+      "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c6ca5a65a0g?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlLWxlYXJuaW5nJTIwcGxhdGZvcm18ZW58MHx8fHwxNzAzNTkxNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "elearning platform"
     }
   ]
 }
