@@ -171,8 +171,8 @@ export const caseStudies: CaseStudy[] = [
     services: ["Web Development", "UI/UX Design", "Platform Development"],
     challenge: "Trending Brains needed to position itself as a premier career-oriented online education platform in India. Their goal was to attract students by showcasing practical, employment-focused courses, demonstrating credibility through success stories, and ultimately converting visitors into enrolled learners.",
     solution: "We developed a comprehensive online learning platform from the ground up, focusing on a seamless user experience. The platform features an intuitive course catalog, easy enrollment, and integration with a learning management system. We designed a clean, responsive interface that highlights course benefits, student testimonials, and clear calls-to-action for enrollment and support.",
-    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY291cnNlfGVufDB8fHx8MTc3MDU1NDU0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    imageHint: "online learning",
+    imageUrl: "/trending-brains-hero.jpg",
+    imageHint: "custom hero",
     results: [
       {
         icon: TrendingUp,
