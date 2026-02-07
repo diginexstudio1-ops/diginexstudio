@@ -1,4 +1,4 @@
-import { BarChart, LineChart, TrendingUp, UserCheck } from "lucide-react";
+import { Award, BarChart, LineChart, TrendingUp, UserCheck } from "lucide-react";
 import { ChartConfig } from "@/components/ui/chart";
 
 export type CaseStudy = {
@@ -321,4 +321,153 @@ export const caseStudies: CaseStudy[] = [
         }
     ],
   },
+  {
+    id: "portfolio-item-3",
+    slug: "corporate-website-innovate-inc",
+    title: "Corporate Website Redesign for 'Innovate Inc.'",
+    client: "Innovate Inc.",
+    industry: "Technology & SaaS",
+    services: ["Web Design", "Web Development", "Brand Identity", "SEO"],
+    challenge: "Innovate Inc.'s existing website was outdated, failed to communicate their position as an industry leader, and generated very few qualified leads. It lacked a modern user experience and didn't reflect their innovative software solutions.",
+    solution: "We executed a complete website overhaul, creating a sleek, modern design that aligns with their brand identity. The new site features clear value propositions, interactive product demonstrations, and a streamlined 'Request a Demo' workflow. We built it on a scalable CMS to allow their marketing team to easily update content.",
+    imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWNoJTIwY29tcGFueXxlbnwwfHx8fDE3NzAzMjk2ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "tech company",
+    results: [
+      {
+        icon: TrendingUp,
+        title: "200% Increase in Demo Requests",
+        description: "The new, intuitive lead capture form and clear calls-to-action tripled the number of qualified leads in the first quarter."
+      },
+      {
+        icon: LineChart,
+        title: "50% Reduction in Bounce Rate",
+        description: "The engaging design and improved site structure kept visitors on the site longer, significantly reducing bounce rates."
+      },
+      {
+        icon: UserCheck,
+        title: "Enhanced Brand Perception",
+        description: "Post-launch surveys showed a significant improvement in how customers perceived the brand, viewing them as more modern and trustworthy."
+      }
+    ],
+    performanceData: [
+      {
+        name: "Demo Requests per Month",
+        chartType: 'line',
+        data: [
+          { month: "Jan", requests: 15 },
+          { month: "Feb", requests: 22 },
+          { month: "Mar", requests: 30 },
+          { month: "Apr", requests: 45 },
+          { month: "May", requests: 55 },
+          { month: "Jun", requests: 60 }
+        ],
+        config: {
+          requests: {
+            label: "Demos",
+            color: "hsl(var(--chart-1))"
+          }
+        }
+      },
+      {
+        name: "Website Bounce Rate",
+        chartType: 'bar',
+        data: [
+          { period: "Before", bounceRate: 85 },
+          { period: "After", bounceRate: 42 }
+        ],
+        config: {
+          bounceRate: {
+            label: "Bounce Rate (%)",
+            color: "hsl(var(--chart-2))"
+          }
+        }
+      }
+    ],
+    galleryImages: [
+      {
+        src: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYWFzJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc3MDQ3NTEyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+        alt: "Screenshot of the Innovate Inc. dashboard.",
+        hint: "saas dashboard"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwZmVhdHVyZSUyMGdyaWR8ZW58MHx8fHwxNzcwNDc1MTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+        alt: "Close-up on a product feature grid.",
+        hint: "product feature"
+      }
+    ]
+  },
+  {
+    id: "portfolio-item-7",
+    slug: "creative-agency-landing-page",
+    title: "Landing Page for 'Bold & Brilliant' Creative Agency",
+    client: "Bold & Brilliant",
+    industry: "Creative & Marketing",
+    services: ["Web Design", "UI/UX", "Animation"],
+    challenge: "The agency's own landing page was paradoxically uninspired. It failed to showcase their creative talent, leading to low engagement and a high bounce rate. They needed a digital front door that was as bold and brilliant as their work.",
+    solution: "We designed a highly interactive, single-page experience filled with micro-interactions, bold typography, and fluid animations. The page tells the agency's story, showcases their best portfolio pieces through an immersive gallery, and uses a conversational tone to connect with potential clients.",
+    imageUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBkZXNpZ24lMjBhZ2VuY3l8ZW58MHx8fHwxNzAzNTkxNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "creative agency",
+    results: [
+      {
+        icon: TrendingUp,
+        title: "80% Increase in Client Inquiries",
+        description: "A clear, compelling call-to-action and an engaging user journey led to a dramatic rise in project inquiries."
+      },
+      {
+        icon: Award,
+        title: "Won 'Digital Design' Award",
+        description: "The landing page was recognized by industry peers for its outstanding UI/UX and innovative design."
+      },
+      {
+        icon: UserCheck,
+        title: "Double the Engagement Time",
+        description: "Users spent twice as long on the new page, interacting with the various animated elements and portfolio showcases."
+      }
+    ],
+    performanceData: [
+      {
+        name: "New Client Inquiries",
+        chartType: 'line',
+        data: [
+          { month: "Jan", inquiries: 12 },
+          { month: "Feb", inquiries: 15 },
+          { month: "Mar", inquiries: 28 },
+          { month: "Apr", inquiries: 35 },
+          { month: "May", inquiries: 40 },
+        ],
+        config: {
+          inquiries: {
+            label: "Inquiries",
+            color: "hsl(var(--chart-1))"
+          }
+        }
+      },
+      {
+        name: "Average Session Duration",
+        chartType: 'bar',
+        data: [
+          { period: "Before", duration: 45 },
+          { period: "After", duration: 95 }
+        ],
+        config: {
+          duration: {
+            label: "Seconds",
+            color: "hsl(var(--chart-2))"
+          }
+        }
+      }
+    ],
+    galleryImages: [
+       {
+        src: "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMHRleHR1cmV8ZW58MHx8fHwxNzcwNDc1MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+        alt: "Close-up of the bold typography used on the page.",
+        hint: "bold typography"
+      },
+      {
+        src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwcG9ydGZvbGlvJTIwc2hvd2Nhc2V8ZW58MHx8fHwxNzcwNDc1MzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+        alt: "The portfolio showcase section with interactive elements.",
+        hint: "portfolio showcase"
+      }
+    ]
+  }
 ];

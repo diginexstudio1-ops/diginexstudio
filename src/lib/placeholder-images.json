@@ -80,13 +80,15 @@
       "id": "portfolio-item-3",
       "description": "Corporate Website for 'Innovate Inc.'",
       "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWNoJTIwY29tcGFueXxlbnwwfHx8fDE3NzAzMjk2ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tech company"
+      "imageHint": "tech company",
+      "slug": "corporate-website-innovate-inc"
     },
     {
       "id": "portfolio-item-7",
       "description": "Creative Agency Landing Page",
       "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBkZXNpZ24lMjBhZ2VuY3l8ZW58MHx8fHwxNzAzNTkxNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "creative agency"
+      "imageHint": "creative agency",
+      "slug": "creative-agency-landing-page"
     }
   ]
 }
