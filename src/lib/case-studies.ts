@@ -242,5 +242,83 @@ export const caseStudies: CaseStudy[] = [
         hint: "course details"
       }
     ]
+  },
+  {
+    id: "portfolio-item-11",
+    slug: "toolzenweb-digital-solutions",
+    title: "ToolZenWeb — Digital Solutions & Web Services Provider",
+    client: "ToolZenWeb",
+    industry: "Digital Services & Technology",
+    services: ["Web Development", "UI/UX Design", "Digital Tools"],
+    challenge: "ToolZenWeb’s offerings were diverse but lacked a central visual narrative that communicated what each digital service does, why users should trust the platform, and how services help business outcomes. The goal was to represent ToolZenWeb as a professional, trustworthy digital solutions partner.",
+    solution: "We designed a clean, professional, and user-centric website that clearly categorizes ToolZenWeb's diverse services. The new platform features intuitive navigation, detailed service pages with clear benefit descriptions, and a showcase of their digital tools. The design emphasizes clarity and trust, helping users quickly understand the value of each offering.",
+    imageUrl: "https://images.unsplash.com/photo-1559042218-a6d194c798e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWIlMjB0b29sc3xlbnwwfHx8fDE3NzAzODc0OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "web tools",
+    websiteUrl: "https://www.toolzenweb.com",
+    results: [
+      {
+        icon: TrendingUp,
+        title: "40% Increase in User Engagement",
+        description: "A clear service structure and intuitive navigation led to users spending more time exploring the platform's offerings."
+      },
+      {
+        icon: LineChart,
+        title: "30% Rise in Service Inquiries",
+        description: "Simplified contact forms and clear calls-to-action made it easier for potential clients to get in touch."
+      },
+      {
+        icon: UserCheck,
+        title: "Positive Feedback on Clarity",
+        description: "Users praised the new design for its professionalism and how easily they could find the information they needed."
+      }
+    ],
+    performanceData: [
+      {
+        name: "User Engagement (Time on Site)",
+        chartType: 'line',
+        data: [
+          { month: 'Jan', time: 2.5 },
+          { month: 'Feb', time: 2.8 },
+          { month: 'Mar', time: 3.5 },
+          { month: 'Apr', time: 4.1 },
+          { month: 'May', time: 4.5 },
+        ],
+        config: {
+          time: {
+            label: "Avg. Mins",
+            color: "hsl(var(--chart-1))"
+          },
+        }
+      },
+      {
+        name: "Service Inquiries",
+        chartType: 'bar',
+        data: [
+          { month: 'Jan', inquiries: 25 },
+          { month: 'Feb', inquiries: 30 },
+          { month: 'Mar', inquiries: 42 },
+          { month: 'Apr', inquiries: 55 },
+          { month: 'May', inquiries: 65 },
+        ],
+        config: {
+          inquiries: {
+            label: "Inquiries",
+            color: "hsl(var(--chart-2))"
+          },
+        }
+      }
+    ],
+    galleryImages: [
+      {
+        src: "https://picsum.photos/seed/toolzen1/800/600",
+        alt: "Screenshot of ToolZenWeb homepage",
+        hint: "website homepage"
+      },
+      {
+        src: "https://picsum.photos/seed/toolzen2/800/600",
+        alt: "Screenshot of the digital tools section",
+        hint: "digital tools"
+      }
+    ]
   }
 ];
