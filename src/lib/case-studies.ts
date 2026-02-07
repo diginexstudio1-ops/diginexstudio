@@ -252,7 +252,7 @@ export const caseStudies: CaseStudy[] = [
     services: ["Web Development", "UI/UX Design", "Digital Tools"],
     challenge: "ToolZenWeb’s offerings were diverse but lacked a central visual narrative that communicated what each digital service does, why users should trust the platform, and how services help business outcomes. The goal was to represent ToolZenWeb as a professional, trustworthy digital solutions partner.",
     solution: "We designed a clean, professional, and user-centric website that clearly categorizes ToolZenWeb's diverse services. The new platform features intuitive navigation, detailed service pages with clear benefit descriptions, and a showcase of their digital tools. The design emphasizes clarity and trust, helping users quickly understand the value of each offering.",
-    imageUrl: "https://images.unsplash.com/photo-1559042218-a6d194c798e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWIlMjB0b29sc3xlbnwwfHx8fDE3NzAzODc0OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/toolzenweb-hero.jpg",
     imageHint: "web tools",
     websiteUrl: "https://www.toolzenweb.com",
     results: [
@@ -310,12 +310,12 @@ export const caseStudies: CaseStudy[] = [
     ],
     galleryImages: [
       {
-        src: "https://picsum.photos/seed/toolzen1/800/600",
+        src: "/toolzenweb-screenshot-1.jpg",
         alt: "Screenshot of ToolZenWeb homepage",
         hint: "website homepage"
       },
       {
-        src: "https://picsum.photos/seed/toolzen2/800/600",
+        src: "/toolzenweb-screenshot-2.jpg",
         alt: "Screenshot of the digital tools section",
         hint: "digital tools"
       }
