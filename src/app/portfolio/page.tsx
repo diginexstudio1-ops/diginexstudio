@@ -43,9 +43,17 @@ export default function PortfolioPage() {
                 <div className="p-6">
                   <h3 className="font-headline text-xl font-semibold">{project.description}</h3>
                   <p className="text-muted-foreground mt-2 text-sm">Web Development &amp; Design</p>
-                  <Button variant="link" className="p-0 h-auto mt-4 text-primary">
-                    View Case Study <ArrowRight className="ml-2 h-4 w-4"/>
-                  </Button>
+                  {project.slug ? (
+                     <Button asChild variant="link" className="p-0 h-auto mt-4 text-primary">
+                        <Link href={`/portfolio/${project.slug}`}>
+                            View Case Study <ArrowRight className="ml-2 h-4 w-4"/>
+                        </Link>
+                    </Button>
+                  ) : (
+                    <Button variant="link" className="p-0 h-auto mt-4 text-primary" disabled>
+                        View Case Study <ArrowRight className="ml-2 h-4 w-4"/>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
