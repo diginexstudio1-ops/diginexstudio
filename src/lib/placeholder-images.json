@@ -38,15 +38,29 @@
     },
     {
       "id": "portfolio-preview-1",
-      "description": "E-commerce Redesign",
-      "imageUrl": "https://images.unsplash.com/photo-1742837581522-111d23b69a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDB8fHx8MTc3MDMwMDU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce website"
+      "description": "Online Skill Development Platform",
+      "imageUrl": "/trending-brains-hero.jpg",
+      "imageHint": "custom hero"
     },
     {
       "id": "portfolio-preview-2",
-      "description": "Mobile App UI",
-      "imageUrl": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc3MDM3Mjg1NXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fitness app"
+      "description": "ToolZenWeb - Digital Solutions Provider",
+      "imageUrl": "/toolzenweb-portfolio-preview.jpg",
+      "imageHint": "web tools"
+    },
+    {
+      "id": "portfolio-item-10",
+      "description": "Online Skill Development Platform",
+      "imageUrl": "/trending-brains-hero.jpg",
+      "imageHint": "custom hero",
+      "slug": "trending-brains-skill-platform"
+    },
+    {
+      "id": "portfolio-item-11",
+      "description": "ToolZenWeb - Digital Solutions Provider",
+      "imageUrl": "/toolzenweb-portfolio-preview.jpg",
+      "imageHint": "web tools",
+      "slug": "toolzenweb-digital-solutions"
     },
     {
       "id": "portfolio-item-1",
@@ -73,20 +87,6 @@
       "description": "Creative Agency Landing Page",
       "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBkZXNpZ24lMjBhZ2VuY3l8ZW58MHx8fHwxNzAzNTkxNTMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "creative agency"
-    },
-    {
-      "id": "portfolio-item-10",
-      "description": "Online Skill Development Platform",
-      "imageUrl": "/trending-brains-hero.jpg",
-      "imageHint": "custom hero",
-      "slug": "trending-brains-skill-platform"
-    },
-    {
-      "id": "portfolio-item-11",
-      "description": "ToolZenWeb - Digital Solutions Provider",
-      "imageUrl": "/toolzenweb-portfolio-preview.jpg",
-      "imageHint": "web tools",
-      "slug": "toolzenweb-digital-solutions"
     }
   ]
 }
