@@ -184,18 +184,20 @@ function ProcessOverview() {
             {processSteps.map((step, index) => (
               <div
                 key={index}
-                className="relative flex flex-col md:flex-row md:items-start"
+                className="relative flex flex-col md:flex-row md:items-start group"
               >
-                <div className="flex-shrink-0 w-24 h-24 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6 md:mb-0 md:absolute md:left-0 md:transform md:-translate-x-1/2 md:bg-background md:border-4 md:border-primary transition-transform duration-300 hover:scale-110">
-                  <step.icon className="h-10 w-10" />
+                <div className="flex-shrink-0 w-24 h-24 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6 md:mb-0 md:absolute md:left-0 md:transform md:-translate-x-1/2 md:bg-background md:border-4 md:border-primary transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl group-hover:rotate-3">
+                  <step.icon className="h-10 w-10 transition-transform duration-300 ease-in-out group-hover:-rotate-3" />
                 </div>
-                <div className="md:ml-24 pl-8 md:pl-16">
-                  <h3 className="font-headline text-2xl font-bold">
-                    {step.title}
-                  </h3>
-                  <p className="mt-2 text-muted-foreground">
-                    {step.description}
-                  </p>
+                <div className="md:ml-24 pl-8 md:pl-16 w-full">
+                    <div className="bg-card p-6 rounded-lg border transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:border-primary/20">
+                        <h3 className="font-headline text-2xl font-bold">
+                            {step.title}
+                        </h3>
+                        <p className="mt-2 text-muted-foreground">
+                            {step.description}
+                        </p>
+                    </div>
                 </div>
               </div>
             ))}
