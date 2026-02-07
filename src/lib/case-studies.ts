@@ -12,6 +12,7 @@ export type CaseStudy = {
   solution: string;
   imageUrl: string;
   imageHint: string;
+  websiteUrl?: string;
   results: {
     icon: React.ElementType;
     title: string;
@@ -173,6 +174,7 @@ export const caseStudies: CaseStudy[] = [
     solution: "We developed a comprehensive online learning platform from the ground up, focusing on a seamless user experience. The platform features an intuitive course catalog, easy enrollment, and integration with a learning management system. We designed a clean, responsive interface that highlights course benefits, student testimonials, and clear calls-to-action for enrollment and support.",
     imageUrl: "/trending-brains-hero.jpg",
     imageHint: "custom hero",
+    websiteUrl: "https://www.trendingbrains.com",
     results: [
       {
         icon: TrendingUp,

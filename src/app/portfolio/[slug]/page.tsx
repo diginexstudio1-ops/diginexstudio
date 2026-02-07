@@ -14,6 +14,7 @@ import { BarChart as RechartsBarChart, CartesianGrid, XAxis, YAxis, Bar, Line, L
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useMemo } from "react";
+import { ExternalLink } from "lucide-react";
 
 // Since we are using this on the client, we cannot use generateStaticParams
 // export async function generateStaticParams() {
@@ -64,14 +65,24 @@ export default function CaseStudyPage({
 
       <section className="container mx-auto px-4 -mt-24 relative z-10">
         <Card>
-          <CardContent className="p-6 md:p-10 grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-headline text-lg font-semibold">Client</h3>
-              <p className="text-muted-foreground">{caseStudy.client}</p>
-            </div>
-            <div>
-              <h3 className="font-headline text-lg font-semibold">Industry</h3>
-              <p className="text-muted-foreground">{caseStudy.industry}</p>
+          <CardContent className="p-6 md:p-10 space-y-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div>
+                  <h3 className="font-headline text-lg font-semibold">Client</h3>
+                  <p className="text-muted-foreground">{caseStudy.client}</p>
+                </div>
+                <div>
+                  <h3 className="font-headline text-lg font-semibold">Industry</h3>
+                  <p className="text-muted-foreground">{caseStudy.industry}</p>
+                </div>
+                {caseStudy.websiteUrl && (
+                    <div>
+                        <h3 className="font-headline text-lg font-semibold">Website</h3>
+                        <a href={caseStudy.websiteUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1.5">
+                            View Live Site <ExternalLink className="h-4 w-4"/>
+                        </a>
+                    </div>
+                )}
             </div>
             <div>
               <h3 className="font-headline text-lg font-semibold">Services</h3>
