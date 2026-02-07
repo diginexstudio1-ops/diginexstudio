@@ -24,6 +24,11 @@ export type CaseStudy = {
     data: any[];
     config: ChartConfig;
   }[];
+  galleryImages?: {
+    src: string;
+    alt: string;
+    hint: string;
+  }[];
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -223,6 +228,18 @@ export const caseStudies: CaseStudy[] = [
             color: "hsl(var(--chart-2))"
           }
         }
+      }
+    ],
+    galleryImages: [
+      {
+        src: "/trending-brains-screenshot-1.jpg",
+        alt: "Screenshot of the Trending Brains homepage",
+        hint: "website homepage"
+      },
+      {
+        src: "/trending-brains-screenshot-2.jpg",
+        alt: "Screenshot of a course page on Trending Brains",
+        hint: "course details"
       }
     ]
   }

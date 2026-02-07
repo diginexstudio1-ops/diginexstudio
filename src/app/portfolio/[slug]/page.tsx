@@ -181,6 +181,37 @@ export default function CaseStudyPage({
         </div>
       </section>
 
+      {caseStudy.galleryImages && caseStudy.galleryImages.length > 0 && (
+        <section className="container mx-auto px-4 my-16 md:my-24">
+          <div className="text-center mb-12">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold">Project Visuals</h2>
+              <p className="mt-4 max-w-2xl mx-auto text-muted-foreground md:text-lg">
+                A closer look at the design and user interface of the project.
+              </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {caseStudy.galleryImages.map((image, index) => (
+              <Card key={index} className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <CardContent className="p-0">
+                  <div className="relative aspect-[4/3]">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      data-ai-hint={image.hint}
+                    />
+                  </div>
+                   <div className="p-4 bg-card">
+                    <p className="text-sm text-muted-foreground">{image.alt}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="container mx-auto px-4 mb-16 md:mb-24">
         <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-16 text-center">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Have a similar project?</h2>
