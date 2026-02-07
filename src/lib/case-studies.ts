@@ -1,4 +1,4 @@
-import { BarChart, LineChart, TrendingUp } from "lucide-react";
+import { BarChart, LineChart, TrendingUp, UserCheck } from "lucide-react";
 import { ChartConfig } from "@/components/ui/chart";
 
 export type CaseStudy = {
@@ -162,4 +162,66 @@ export const caseStudies: CaseStudy[] = [
         }
     ],
   },
+  {
+    id: "portfolio-item-10",
+    slug: "trending-brains-skill-platform",
+    title: "Trending Brains: Online Skill Development Platform",
+    client: "Trending Brains Academy",
+    industry: "Online Education",
+    services: ["Web Development", "UI/UX Design", "Platform Development"],
+    challenge: "Trending Brains needed to position itself as a premier career-oriented online education platform in India. Their goal was to attract students by showcasing practical, employment-focused courses, demonstrating credibility through success stories, and ultimately converting visitors into enrolled learners.",
+    solution: "We developed a comprehensive online learning platform from the ground up, focusing on a seamless user experience. The platform features an intuitive course catalog, easy enrollment, and integration with a learning management system. We designed a clean, responsive interface that highlights course benefits, student testimonials, and clear calls-to-action for enrollment and support.",
+    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwY291cnNlfGVufDB8fHx8MTc3MDU1NDU0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "online learning",
+    results: [
+      {
+        icon: TrendingUp,
+        title: "70% Increase in Course Enrollment",
+        description: "The new user-friendly platform and clear calls-to-action dramatically boosted student sign-ups within the first quarter."
+      },
+      {
+        icon: LineChart,
+        title: "50% Higher User Engagement",
+        description: "An improved site structure and engaging course layouts led to users spending more time on the platform and exploring more courses."
+      },
+      {
+        icon: UserCheck,
+        title: "95% Positive Student Feedback",
+        description: "Feedback from new students praised the platform's ease of use and the clarity of the course information."
+      }
+    ],
+    performanceData: [
+      {
+        name: "Course Enrollment Growth",
+        chartType: "line",
+        data: [
+          { month: "Pre-Launch", enrollment: 500 },
+          { month: "Month 1", enrollment: 1200 },
+          { month: "Month 2", enrollment: 2500 },
+          { month: "Month 3", enrollment: 4800 },
+          { month: "Month 4", enrollment: 8500 }
+        ],
+        config: {
+          enrollment: {
+            label: "New Enrollments",
+            color: "hsl(var(--chart-1))"
+          }
+        }
+      },
+      {
+        name: "User Engagement (Avg. Session)",
+        chartType: "bar",
+        data: [
+          { metric: "Before", duration: 8 },
+          { metric: "After", duration: 15 }
+        ],
+        config: {
+          duration: {
+            label: "Avg. Minutes",
+            color: "hsl(var(--chart-2))"
+          }
+        }
+      }
+    ]
+  }
 ];

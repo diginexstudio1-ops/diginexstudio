@@ -115,6 +115,13 @@
       "description": "Online Learning Platform",
       "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c6ca5a65a0g?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlLWxlYXJuaW5nJTIwcGxhdGZvcm18ZW58MHx8fHwxNzAzNTkxNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "elearning platform"
+    },
+    {
+      "id": "portfolio-item-10",
+      "description": "Online Skill Development Platform",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxza2lsbCUyMGRldmVsb3BtZW50fGVufDB8fHx8MTc3MDU1NTI1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "skill development",
+      "slug": "trending-brains-skill-platform"
     }
   ]
 }
