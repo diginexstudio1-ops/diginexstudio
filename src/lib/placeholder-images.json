@@ -84,7 +84,7 @@
     {
       "id": "portfolio-item-11",
       "description": "ToolZenWeb - Digital Solutions Provider",
-      "imageUrl": "https://images.unsplash.com/photo-1559042218-a6d194c798e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWIlMjB0b29sc3xlbnwwfHx8fDE3NzAzODc0OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/toolzenweb-portfolio-preview.jpg",
       "imageHint": "web tools",
       "slug": "toolzenweb-digital-solutions"
     }
