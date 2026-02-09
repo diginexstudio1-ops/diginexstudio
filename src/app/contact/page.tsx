@@ -59,7 +59,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Office</h3>
-                <p className="text-muted-foreground">123 Digital Avenue, Tech City, 12345</p>
+                <p className="text-muted-foreground">office no-564,5 floor, suryalok complex,abids,hyd.</p>
               </div>
             </div>
           </div>
